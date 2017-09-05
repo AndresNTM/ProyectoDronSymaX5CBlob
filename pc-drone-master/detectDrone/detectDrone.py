@@ -76,7 +76,7 @@ for fname in images:
     params.filterByInertia =True
     params.minInertiaRatio = 0.5
      
-    detector = cv2.SimpleBlobDetector_create(params)
+    detector = cv2.SimpleBlobDetector(params)
  
     # Detect blobs.
     reversemask=255-mask
