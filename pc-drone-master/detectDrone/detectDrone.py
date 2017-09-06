@@ -20,7 +20,7 @@ mtx=calfile['mtx']
 dist=calfile['dist']
 
 blobsNotFound = []
-images = glob.glob('images\\*.jpg')
+images = glob.glob('images\\blob_1.jpg')
 
 for fname in images:
     print fname
@@ -47,7 +47,7 @@ for fname in images:
     # Bitwise-AND of mask and purple only image - only used for display
     res = cv2.bitwise_and(frame, frame, mask= mask)
 
-    #mask = cv2.erode(mask, None, iterations=1)
+#    mask = cv2.erode(mask, None, iterations=1)
     # commented out erode call, detection more accurate without it
 
     # dilate makes the in range areas larger

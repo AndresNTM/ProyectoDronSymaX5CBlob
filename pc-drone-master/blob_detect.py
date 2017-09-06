@@ -39,9 +39,10 @@ def add_blobs(crop_frame):
     #upper_green = np.array([80,255,255])
     
     # Actually purple
-    lower_green = np.array([115,50,10])
-    upper_green = np.array([160,255,255])
-    
+    #lower_green = np.array([115,50,10])
+    #upper_green = np.array([160,255,255])
+    lower_green = np.array([134,73,59])
+    upper_green = np.array([162,255,255])
     
     # Threshold the HSV image to get only blue colors
     mask = cv2.inRange(hsv, lower_green, upper_green)
